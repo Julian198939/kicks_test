@@ -19,3 +19,5 @@ Should be able to login and add to cart
     Kicks_login_valid.Click and Choose Size
 
     Kicks_login_valid.Check out cart
+
+test should be success
