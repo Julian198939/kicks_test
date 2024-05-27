@@ -1,7 +1,5 @@
 *** Settings ***
 
-Library        SeleniumLibrary   
-
 *** Keywords ***
 
 Login through Google

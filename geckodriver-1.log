@@ -1,0 +1,52 @@
+1716524130506	geckodriver	INFO	Listening on 127.0.0.1:58596
+1716524130554	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/pc/f1_rzgw17292y8sn8hx2lr7c0000gp/T/rust_mozprofilemGJko3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1716524130861	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1716524131116	Marionette	INFO	Listening on port 58609
+WebDriver BiDi listening on ws://127.0.0.1:58597
+Read port: 58609
+1716524131298	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:58597/devtools/browser/05ec7110-bdea-4119-96ea-b1056265a5ab
+1716524136114	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1716524139268	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.kickscrew.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.kickscrew.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.kickscrew.com."
+JavaScript warning: https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js, line 1: Script terminated by timeout at:
+o.leaveBreadcrumb@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:23714
+Ot/load/n/t.exports@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:37320
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.kickscrew.com."
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6867
+
+1716524160333	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1716524160890	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3573: TypeError: this._windows[aWindow.__SSi] is undefined
+JavaScript warning: https://cdn.shopify.com/shopifycloud/checkout-web/assets/5927.latest.en.a73146dcbf67c395149d.js, line 2: Script terminated by timeout at:
+3367/_/<@https://cdn.shopify.com/shopifycloud/checkout-web/assets/5927.latest.en.a73146dcbf67c395149d.js:2:123512
+t@https://cdn.shopify.com/shopifycloud/checkout-web/assets/5927.latest.en.a73146dcbf67c395149d.js:2:123373
+
+JavaScript warning: https://www.paypal.com/sdk/js?commit=false&currency=USD&components=buttons&client-id=AfUEYT7nO4BwZQERn9Vym5TbHAG08ptiKa9gm8OARBYgoqiAJIjllRjeIMI4g294KAH1JdTnkzubt1fr&intent=authorize&merchant-id=THL43294HL2LJ&enable-funding=venmo, line 3: Script terminated by timeout at:
+n.try@https://www.paypal.com/sdk/js?commit=false&currency=USD&components=buttons&client-id=AfUEYT7nO4BwZQERn9Vym5TbHAG08ptiKa9gm8OARBYgoqiAJIjllRjeIMI4g294KAH1JdTnkzubt1fr&intent=authorize&merchant-id=THL43294HL2LJ&enable-funding=venmo:3:16929
+E@https://www.paypal.com/sdk/js?commit=false&currency=USD&components=buttons&client-id=AfUEYT7nO4BwZQERn9Vym5TbHAG08ptiKa9gm8OARBYgoqiAJIjllRjeIMI4g294KAH1JdTnkzubt1fr&intent=authorize&merchant-id=THL43294HL2LJ&enable-funding=venmo:3:60448
+lr</<@https://www.paypal.com/sdk/js?commit=false&currency=USD&components=buttons&client-id=AfUEYT7nO4BwZQERn9Vym5TbHAG08ptiKa9gm8OARBYgoqiAJIjllRjeIMI4g294KAH1JdTnkzubt1fr&intent=authorize&merchant-id=THL43294HL2LJ&enable-funding=venmo:3:61818
+
+JavaScript warning: https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js, line 1: Script terminated by timeout at:
+t@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:201
+r@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:358
+o.leaveBreadcrumb@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:23773
+Ot/load/n/t.exports@https://cdn.shopify.com/shopifycloud/arrive-server/vite/assets/notifier-dryRZ1m7.js:1:37320
+
+1716618220924	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1716650006000	Marionette	INFO	Stopped listening on port 58609
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

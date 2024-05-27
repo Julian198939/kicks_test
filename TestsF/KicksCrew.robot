@@ -1,23 +1,65 @@
 *** Settings ***
-Documentation  This is some basic info about the whole suite
-Library        SeleniumLibrary   
+  
 Resource       ../Resources/Kicks_login_valid/Kicks_login_valid.robot
 Resource       ../Resources/Kicks_login_valid/Kicks_login_valid_common.robot
+
+#PO
+Resource       ../Resources/PO/LandingPage.robot
+Resource       ../Resources/PO/Login.robot
+Resource       ../Resources/PO/SearchResults.robot
+Resource       ../Resources/PO/TopNav.robot
+Resource       ../Resources/PO/Product.robot
+Resource       ../Resources/PO/Cart.robot
+
 #Suite Setup    Kicks_Invalid.common.Insert Testing Data
-Test Setup     Kicks_login_valid_common.Initialize Selenium And Begin Web Test
-Test Teardown  Kicks_login_valid_common.End Web Test Browsers
 #Suite Teardown  Kicks_Invalid.common.Cleanup Testing Data
 
-*** Test Cases *** 
-Should be able to login and add to cart
-    [Documentation]            This is some basic info about the test
-    [Tags]                       Smoke
+*** Keywords ***
+user is not logged in
+    Log  Check to see whether user is logged in
+
+user login ${valid_email} and ${valid_pwd}
+    LandingPage.Verify Page Loaded
 
     Kicks_login_valid.Login Valid Acc
-    Kicks_login_valid.Search for porduct
+    Login.Verify Page Loaded
 
+user searches for ${products} 
+    TopNav.Search for Products
+    SearchResults.Verify Search Completed
+
+user selects a ${searched_product}
     Kicks_login_valid.Click and Choose Size
 
-    Kicks_login_valid.Check out cart
+wait correct product page ${loads} 
+    Product.Verify Page Loaded
 
-test should be success
+user adds that product to their cart
+    Product.Add to Cart
+
+the product is ${present_in_the_cart} 
+    Cart.Verify Product Added
+
+
+
+#tc
+#Should be able to login and add to cart
+    ##[Tags]                     Smoke
+
+    #Kicks_login_valid_common.Initialize Selenium And Begin Web Test
+
+    #LandingPage.Verify Page Loaded
+
+    #Kicks_login_valid.Login Valid Acc
+    #Login.Verify Page Loaded
+
+    #TopNav.Search for Products
+    #SearchResults.Verify Search Completed
+
+   # Kicks_login_valid.Click and Choose Size
+    #Product.Verify Page Loaded
+    #Product.Add to Cart
+
+    #Cart.Verify Product Added
+
+    #Kicks_login_valid_common.End Web Test Browsers
