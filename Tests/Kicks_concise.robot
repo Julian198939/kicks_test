@@ -7,6 +7,8 @@ Resource       ../TestsF/KicksCrew.robot
 Resource       ../TestsF/Kicks_login_InvalidAcc.robot
 Resource       ../TestsF/Kicks_login_Google.robot
 
+#Variables      ../Tests/vars.robot
+
 Test Setup      Kicks_login_valid_common.Initialize Selenium And Begin Web Test
 Test Teardown  Kicks_login_valid_common.End Web Test Browsers
 #Suite Setup    Kicks_Invalid.common.Insert Testing Data
@@ -18,22 +20,22 @@ Test Teardown  Kicks_login_valid_common.End Web Test Browsers
 Should be able to Login 
     [Tags]         01            Smoke
     Given user is not logged in
-    When user login ${valid_email} and ${valid_pwd}
+    When user login with Valid Credentials
 
 Shouldn't be able to login
     [Tags]         02       Smoke
     Given user is not logged in
-    when user login to ${invalid_email} and ${invalid_pwd} 
-    Then page present ${invalid msge}
+    when user login to invalid email and invalid pwd
+    Then page present invalid msge
 
 
 Should be able to login and add to cart
     [Tags]            03         Smoke
     Given user is not logged in
-    When user login ${valid_email} and ${valid_pwd}
-    And user searches for ${products} 
-    And user selects a ${searched product}
-    And wait correct product page ${loads} 
+    When user login with Valid Credentials
+    And user searches for products 
+    And user selects searched prods
+    And wait correct product page loads
     And user adds that product to their cart
-    Then the product is ${present_in_the_cart} 
+    Then the product is present in the cart
 

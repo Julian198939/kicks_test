@@ -1,25 +1,25 @@
 *** Settings ***
 Library        SeleniumLibrary 
 
-*** Variables ***
-${valid_email}  love198939@yahoo.com   
-${valid_pwd}    Love920324
-${searched_product}  https://cdn.shopify.com/s/files/1/0603/3031/1875/files/main-square_bcba713e-b633-4ff9-9d22-d96fec1cb1b5_x480.jpg?v=1708351693
+#Variables    ../../Tests/vars.robot
+
 
 *** Keywords ***
 
  #login valid acc
 Login Valid Acc
+    [Arguments]    ${VALID_EMAIL}  ${VALID_PASSWORD}    
     Click Element              class=nav-account
     Wait Until Page Contains   LOGIN
 
-    Input Text                 id=customer_email        ${valid_email}
-    Input Text                 id=customer_password     ${valid_pwd}
+    Input Text                 id=customer_email        ${VALID_EMAIL} 
+    Input Text                 id=customer_password     ${VALID_PASSWORD}  
     Click Element              css=input[type='submit'][value='Sign In']
 
 Click and Choose Size
+    [Arguments]    ${SEARCHED_PRODS}
      Click Element             css=button.aa-SubmitButton
      Wait Until Page Contains  FILTER
-     Click Image               ${searched_product} 
+     Click Image               ${SEARCHED_PRODS} 
     
      Sleep                     3s

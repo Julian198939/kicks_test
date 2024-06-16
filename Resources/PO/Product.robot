@@ -1,15 +1,16 @@
 *** Settings ***
 Library  SeleniumLibrary
 
-*** Variables ***
-${loads}  Air Jordan 1 Low 'Ashen Slate' 553558-414
+#Variables  ../../Tests/vars.robot
+
 
 *** Keywords ***
 Verify Page Loaded
+   [Arguments]  ${loads} 
     Wait Until Page Contains  ${loads} 
 
 
 
 Add to Cart
-    Click Element             css=label.opt---us-10-5-9200-a > span
+    Click Element           css=label.opt---us-11-9700-a
     Click Element             id=add_to_cart
